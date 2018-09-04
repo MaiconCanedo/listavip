@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>ListaVIP</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron" align="center" style="margin-top: 50px;">
+        <h1>Seja bem vindo ao ListaVIPs</h1>
+        <form action="buscar" method="post">
+            <div class="form-group">
+                <label for="pesquisa">Pesquisar</label>
+                <input type="text" class="form-control" id="pesquisa" name="pesquisa" placeholder="Nome do convidado" style="margin: 0px;" />
+                <button type="submit" class="btn btn-success" style="margin: 0px;">Buscar</button>
+            </div>
+        </form>
+        <hr/>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+            </thead>
+            <tr th:each="convidado : ${convidados2}">
+                <td><span th:text="${convidado.nome}"></span></td>
+                <td><span th:text="${convidado.email}"></span></td>
+                <td><span th:text="${convidado.telefone}"></span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

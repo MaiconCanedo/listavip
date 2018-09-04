@@ -33,4 +33,16 @@ public class ConvidadoController {
         convidadoRepository.save(convidado);
         return listaConvidados(model);
     }
+
+    @RequestMapping(value = "pesquisa")
+    public String pesquisa() {
+        return "pesquisa";
+    }
+
+    @RequestMapping(value = "buscar", method = RequestMethod.POST)
+    public String buscarConvidados(@RequestParam("pesquisa") String pesquisa, Model model){
+        Iterable<Convidado> convidados = convidadoRepository.findByNomeContainingIgnoreCase(pesquisa);
+        model.addAttribute("convidados2", convidados);
+        return "pesquisa";
+    }
 }
