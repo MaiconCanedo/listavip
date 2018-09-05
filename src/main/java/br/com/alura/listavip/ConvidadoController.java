@@ -2,6 +2,7 @@ package br.com.alura.listavip;
 
 import br.com.alura.listavip.model.Convidado;
 import br.com.alura.listavip.repository.ConvidadoRepository;
+import br.com.alura.listavip.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +25,7 @@ public class ConvidadoController {
     public String listaConvidados(Model model) {
         Iterable<Convidado> convidados = convidadoRepository.findAll();
         model.addAttribute("convidados", convidados);
+
         return "listaconvidados";
     }
 
@@ -31,6 +33,7 @@ public class ConvidadoController {
     public String salvar(@RequestParam("nome") String nome, @RequestParam("email") String email, @RequestParam("telefone") String telefone, Model model){
         Convidado convidado = new Convidado(nome, email, telefone);
         convidadoRepository.save(convidado);
+        new EmailService().enviar(nome, email);
         return listaConvidados(model);
     }
 
@@ -41,7 +44,7 @@ public class ConvidadoController {
 
     @RequestMapping(value = "buscar", method = RequestMethod.POST)
     public String buscarConvidados(@RequestParam("pesquisa") String pesquisa, Model model){
-        Iterable<Convidado> convidados = convidadoRepository.findByNomeContainingIgnoreCase(pesquisa);
+        Iterable<Convidado> convidados = convidadoRepository.findCustomByNome(pesquisa);
         model.addAttribute("convidados2", convidados);
         return "pesquisa";
     }

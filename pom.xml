@@ -46,6 +46,13 @@
             <artifactId>spring-boot-devtools</artifactId>
             <version>${springBoot.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-email</artifactId>
+            <version>1.5</version>
+        </dependency>
+
     </dependencies>
 
     <build>
