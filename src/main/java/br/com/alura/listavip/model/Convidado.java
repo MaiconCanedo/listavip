@@ -9,7 +9,7 @@ public class Convidado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String nome;
     private String email;
     private String telefone;
@@ -45,11 +45,11 @@ public class Convidado {
         return Objects.hash(id);
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce56f924-66ce-4166-a793-f7d969c1e08e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/enviadorEmail_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/ConvidadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/ConvidadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/repository/ConvidadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/repository/ConvidadoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listaconvidados.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listaconvidados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pesquisa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pesquisa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/Configuracao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/model/Convidado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/model/Convidado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/Configuracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/Configuracao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/ConvidadoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/ConvidadoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/repository/ConvidadoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/repository/ConvidadoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/listaconvidados.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listaconvidados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/pesquisa.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/pesquisa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/model/Convidado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/model/Convidado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/alura/listavip/service/EmailService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,40 +24,44 @@
     <session id="930685398">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="752" />
-          <entry key="java" value="1453" />
-          <entry key="xml" value="244" />
+          <entry key="java" value="1485" />
+          <entry key="properties" value="403" />
+          <entry key="xml" value="264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="752" />
-          <entry key="JAVA" value="1453" />
-          <entry key="XML" value="244" />
+          <entry key="JAVA" value="1485" />
+          <entry key="Properties" value="403" />
+          <entry key="XML" value="264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
           <entry key="html" value="3" />
-          <entry key="java" value="7" />
+          <entry key="java" value="8" />
           <entry key="js" value="1" />
+          <entry key="properties" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -68,8 +69,9 @@
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="8" />
           <entry key="JavaScript" value="1" />
+          <entry key="Properties" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -83,11 +85,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="412">
+              <caret line="64" column="52" lean-forward="true" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -95,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/Configuracao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="115" selection-start-line="20" selection-start-column="115" selection-end-line="20" selection-end-column="115" />
+            <state relative-caret-position="238">
+              <caret line="16" column="115" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,10 +106,19 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/ConvidadoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
+            <state relative-caret-position="289">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -126,12 +137,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/repository/ConvidadoRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/model/Convidado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+            <state relative-caret-position="102">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#toString#0;class#Convidado#0" />
+                <element signature="method#equals#0;class#Convidado#0" />
               </folding>
             </state>
           </provider>
@@ -179,15 +192,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/Configuracao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/model/Convidado.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/repository/ConvidadoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/pesquisa.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/listaconvidados.html" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/service/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/ConvidadoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/Configuracao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/alura/listavip/model/Convidado.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -215,11 +229,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="252" />
-    <option name="y" value="487" />
-    <option name="width" value="854" />
-    <option name="height" value="691" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="800" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -267,6 +281,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="listavip" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="listavip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="listavip" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="listavip" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,29 +308,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="listavip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="listavip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="listavip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="listavip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +325,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536181828666" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536267565063" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -396,16 +403,27 @@
       <workItem from="1536178698455" duration="40000" />
       <workItem from="1536179572154" duration="198000" />
       <workItem from="1536179792737" duration="1569000" />
+      <workItem from="1536181797467" duration="216000" />
+      <workItem from="1536251494194" duration="10053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33457000" />
+    <option name="totallyTimeSpent" value="43726000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.499336" visible="true" weight="0.17866324" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499336" visible="true" weight="0.18059126" />
       <window_info id="Structure" order="1" sideWeight="0.500664" side_tool="true" weight="0.17866324" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -415,18 +433,18 @@
       <window_info id="Web" order="7" sideWeight="0.500664" side_tool="true" weight="0.17866324" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45418328" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.73393315" weight="0.51527226" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997344" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32934928" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3492696" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32934928" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49871466" weight="0.32934928" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49871466" weight="0.32934928" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993573" weight="0.25896415" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5012854" side_tool="true" weight="0.32934928" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.2735724" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32934928" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.49871466" weight="0.32934928" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32934928" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4993573" weight="0.32934928" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -499,10 +517,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/service/EmailService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -528,36 +546,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/service/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/model/Convidado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/Configuracao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="115" selection-start-line="20" selection-start-column="115" selection-end-line="20" selection-end-column="115" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/ConvidadoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
+        <state relative-caret-position="289">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -567,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/repository/ConvidadoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="176">
           <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -575,10 +566,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/model/Convidado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#toString#0;class#Convidado#0" />
+            <element signature="method#equals#0;class#Convidado#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="412">
+          <caret line="64" column="52" lean-forward="true" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/alura/listavip/Configuracao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="115" selection-start-line="16" selection-start-column="115" selection-end-line="16" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
         </state>
       </provider>
     </entry>
